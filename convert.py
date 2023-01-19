@@ -70,7 +70,7 @@ for i in range(len(contentArr)):
         time = str(time)
         r = "control.waitMicros(" + time + ")"
         out.write(r)
-    else:
+    elif(cont.startswith("noTone")):
         out.write("music.stopAllSounds()")
     out.write("\n")
 
